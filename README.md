@@ -40,7 +40,7 @@ Using NumPy and Pandas, the raw dataset was cleaned and enriched before analysis
 4. Engineered new features to support deeper analysis:
   - age_group — bucketed customers into segments (e.g., Young Adult, Adult, Middle-aged, Senior) for demographic-level insights
   - purchase_frequency_days — converted the categorical purchase frequency (e.g., "Weekly", "Monthly") into a numeric day-based value for quantitative analysis
-5. Exported the cleaned dataset for use in SQL analysis.
+5. Exported the cleaned dataset and loaded it into the SQL database using SQLAlchemy's create_engine, for use in SQL analysis.
 
 Notebook: [customer_behaviour.ipynb](customer_behaviour.ipynb)  
 
@@ -57,10 +57,10 @@ The cleaned dataset was loaded into a SQL database (customer_behaviour table) to
 - Top 3 most purchased products within each category
 - Relationship between repeat buyers (5+ purchases) and subscription status
 - Revenue contribution by age group
-- Impact of discounts on average purchase amount
 - Revenue and average purchase amount by product category
+- Impact of discounts on average purchase amount
 
-Full queries :[customer_behaviour.ipynb](customer_shopping_behaviour_business_queries.sql)
+# Full queries :[customer_behaviour.ipynb](customer_shopping_behaviour_business_queries.sql)
 
 # Power BI Dashboard
 An interactive dashboard was built in Power BI to visualize key metrics and support quick, data-driven decisions.
@@ -71,6 +71,29 @@ Key Metrics & Visuals:
 - Revenue & Sales by Category
 - Revenue & Sales by Age Group
 - Interactive filters/slicers — Gender, Category, Shipping Type, Subscription Status
-File: [customer_behaviour.ipynb](customer_behaviour.ipynb) 
+
+# File: [customer_behaviour.ipynb](customer_shopping_behaviour.pbix) 
+
+# Tools and Technologies
+|Tool	                 |   Description                                 |
+| ---------------------|-----------------------------------------------|
+|Python (Pandas,Numpy	 | Data Cleaning & feature engineering          |
+|SQLAlchemy            | Connecting Python to SQL database for data transfer    | 
+|SQL (PostgreSQL)	     | Business question analysis                          |
+|Power BI	             | Dashboard and data visualization                               |   
+|Jupyter Notebook      | Development Environment |
+
+# Key Insights
+- Clothing is the top revenue-generating category, outperforming Accessories, Footwear, and Outerwear in both total revenue and purchase count.
+  
+- Subscription status has little impact on individual spending. Subscribed and non-subscribed customers spend almost the same on average ($59.49 vs. $59.87). The large gap in total revenue ($62,645 vs. $170,436) is driven entirely by customer volume — there are 2,847 non-subscribed customers vs. 1,053 subscribed customers, nearly 3x more, not by non-subscribers spending more per person.
+  
+- Discounts have almost no measurable effect on spending behavior. Customers who used a discount spent about the same on average ($59.28) as those who didn't ($60.13). Of the 1,677 customers who used a discount, 839 spent above the overall average — 50.03% of that group. Of the 2,223 customers who didn't use a discount, 1,124 spent above average — 50.56% of that group. This near-identical rate suggests discounting is not a meaningful driver of higher-value purchases in this dataset.
+  
+- Revenue is fairly evenly distributed across age groups. Young Adults contributed the most ($62,143 across 1,028 purchases) and Middle-aged customers the least ($55,763 across 944 purchases) — a gap of only about 11%. Average purchase amount is nearly identical across all groups ($59.07–$60.45), suggesting age has minimal influence on individual spending behavior.
+  
+- Repeat purchasing is common across the board, regardless of subscription status. Out of 1,053 subscribed customers, 958 are repeat buyers (5+ previous purchases) — that's 958/1,053 = 91.0%. Out of 2,847 non-subscribed customers, 2,518 are repeat buyers — that's 2,518/2,847 = 88.4%. A difference of only 2.6 percentage points means subscription status does not meaningfully predict repeat-buying behavior.
+       
+
 
 
