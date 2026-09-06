@@ -13,22 +13,22 @@ Source:[ Shopping Trends Dataset — Kaggle](https://www.kaggle.com/code/hasaank
 Size: 3,900 rows × 18 columns
 Description: Contains customer-level retail transaction data including demographics, purchase details, ratings, subscription status, discounts, and shipping preferences.
 
-Column	                  Description
-Customer ID	              Unique identifier for each customer
-Age	                      Customer's age
-Gender	                  Customer's gender
-Item Purchased	          Product bought
-Category	                Product category (Clothing, Footwear, etc.)
-Purchase Amount (USD)	    Transaction value
-Location	                Customer's location
-Size, Color, Season	      Product attributes
-Review Rating	            Rating given by customer
-Subscription Status	      Whether customer is subscribed
-Shipping Type	            Delivery method used
-Discount Applied         	Discount usage flags
-Previous Purchases      	Number of past purchases
-Payment Method	          Mode of payment
-Frequency of Purchases	  How often the customer shops
+Column	               |   Description
+Customer ID	           |  Unique identifier for each customer
+Age	                   | Customer's age
+Gender	               |   Customer's gender
+Item Purchased	       |  Product bought
+Category	             |   Product category (Clothing, Footwear, etc.)
+Purchase Amount (USD)	 |   Transaction value
+Location	             |   Customer's location
+Size, Color, Season	   |   Product attributes
+Review Rating	         |   Rating given by customer
+Subscription Status	   |   Whether customer is subscribed
+Shipping Type	         |   Delivery method used
+Discount Applied       |  	Discount usage flags
+Previous Purchases     | 	Number of past purchases
+Payment Method	       |   Mode of payment
+Frequency of Purchases |	  How often the customer shops
 
 
 # Data Cleaning & Feature Engineering (Python)
