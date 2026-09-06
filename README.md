@@ -60,7 +60,7 @@ The cleaned dataset was loaded into a SQL database (customer_behaviour table) to
 - Revenue and average purchase amount by product category
 - Impact of discounts on average purchase amount
 
-# Full queries :[customer_behaviour.ipynb](customer_shopping_behaviour_business_queries.sql)
+Full queries :[customer_behaviour.ipynb](customer_behaviour.sql)
 
 # Power BI Dashboard
 An interactive dashboard was built in Power BI to visualize key metrics and support quick, data-driven decisions.
@@ -72,7 +72,7 @@ Key Metrics & Visuals:
 - Revenue & Sales by Age Group
 - Interactive filters/slicers — Gender, Category, Shipping Type, Subscription Status
 
-# File: [customer_behaviour.ipynb](customer_shopping_behaviour.pbix) 
+File: [customer_behaviour.ipynb](customer_shopping_behaviour.pbix) 
 
 # Tools and Technologies
 |Tool	                 |   Description                                 |
