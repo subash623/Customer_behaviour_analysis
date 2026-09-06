@@ -62,6 +62,15 @@ The cleaned dataset was loaded into a SQL database (customer_behaviour table) to
 
 Full queries :[customer_behaviour.ipynb](customer_shopping_behaviour_business_queries.sql)
 
+# Power BI Dashboard
+An interactive dashboard was built in Power BI to visualize key metrics and support quick, data-driven decisions.
+Key Metrics & Visuals:
 
+- KPI cards — Total Customers, Average Purchase Amount, Average Review Rating
+- Subscription status breakdown (donut chart)
+- Revenue & Sales by Category
+- Revenue & Sales by Age Group
+- Interactive filters/slicers — Gender, Category, Shipping Type, Subscription Status
+File: [customer_behaviour.ipynb](customer_behaviour.ipynb) 
 
 
