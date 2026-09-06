@@ -42,7 +42,7 @@ Using NumPy and Pandas, the raw dataset was cleaned and enriched before analysis
   - purchase_frequency_days — converted the categorical purchase frequency (e.g., "Weekly", "Monthly") into a numeric day-based value for quantitative analysis
 5. Exported the cleaned dataset and loaded it into the SQL database using SQLAlchemy's create_engine, for use in SQL analysis.
 
-Notebook: [customer_behaviour.ipynb](customer_behaviour.ipynb)  
+Notebook: [customer_behaviour_Python_file](customer_behaviour.ipynb)  
 
 # SQL Analysis- Business Questions
 The cleaned dataset was loaded into a SQL database (customer_behaviour table) to answer real-world business questions. Below is a summary of the questions explored:
@@ -60,7 +60,7 @@ The cleaned dataset was loaded into a SQL database (customer_behaviour table) to
 - Revenue and average purchase amount by product category
 - Impact of discounts on average purchase amount
 
-Full queries :[customer_behaviour.ipynb](customer_behaviour.sql)
+Full queries :[customer_behaviour_business_queries](customer_behaviour.sql)
 
 # Power BI Dashboard
 An interactive dashboard was built in Power BI to visualize key metrics and support quick, data-driven decisions.
@@ -72,7 +72,7 @@ Key Metrics & Visuals:
 - Revenue & Sales by Age Group
 - Interactive filters/slicers — Gender, Category, Shipping Type, Subscription Status
 
-File: [customer_behaviour.ipynb](customer_shopping_behaviour.pbix) 
+File: [customer_behaviour_PowerBI_dashboard](customer_shopping_behaviour.pbix) 
 
 # Tools and Technologies
 |Tool	                 |   Description                                 |
